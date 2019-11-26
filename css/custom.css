@@ -1,0 +1,63 @@
+
+/* ---- Prevent user from being able to double click text ---- */
+.no-select {
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.8);
+}
+
+.navbar-brand {
+  color: rgba(255,255,255,0.8);
+}
+
+/* ---- Custom title font ---- */
+@font-face {
+  font-family: 'College';
+  src: url('../font/college.woff2') format('woff2'),
+  url('../font/college.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title-text {
+  font-family: 'College'!important;
+  color: white!important;
+  opacity: 1!important;
+  background: none!important;
+  -webkit-text-fill-color: white!important;;
+}
+
+/* ---- Button css ---- */
+.btn-primary {
+  background-color: grey;
+}
+
+#button-box {
+  z-index: 100;
+  position: relative;
+}
+
+/* ---- Description text ---- */
+.text-white-50 {
+  color: white!important;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0
+}
+
+.masthead {
+  background: #000;
+}
