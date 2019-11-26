@@ -20,6 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
   <!-- Favicon for CreatED 2020 -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
 
@@ -30,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -41,26 +42,37 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">FAQs</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Sponsors</a>
+            <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#faq">FAQs</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Particle Div -->
+  <div id="particles-js"></div>
+
   <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">CreatED Hack</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">United Kingdom's largest Hardware Hackathon</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Apply now!</a>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Become a sponsor!</a>
+  <header class="masthead"></div>
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center no-select">
+          <h1 class="mx-auto my-0 text-uppercase title-text">CreatED Hack</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">United Kingdom's largest Hardware Hackathon</h2>
+          <div id="button-box">
+            <a href="#signup" class="btn btn-primary js-scroll-trigger">Apply now!</a>
+            <a href="#sponsors" class="btn btn-primary js-scroll-trigger">Become a sponsor!</a>
+          </div>
+        </div>
       </div>
-    </div>
   </header>
 
   <!-- About Section -->
@@ -91,7 +103,7 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
+                <h4 class="text-white">Project 1</h4>
                 <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
@@ -109,7 +121,7 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
+                <h4 class="text-white">Project 2</h4>
                 <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
@@ -126,7 +138,7 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
+                <h4 class="text-white">Project 3</h4>
                 <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
@@ -144,7 +156,7 @@
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
+                <h4 class="text-white">Project 4</h4>
                 <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
@@ -153,6 +165,18 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section id="sponsors" class="about-section text-center">
+    <div class="container">
+      <div class="row" style="padding-top: 10%; padding-bottom: 20%;">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Sponsors</h2>
+          <a href="#sponsors" class="btn btn-primary js-scroll-trigger">Join</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -175,8 +199,8 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact-section bg-black">
+  <!-- FAQ Section -->
+  <section id="faq" class="contact-section bg-black">
     <div class="container">
 
       <div class="row">
@@ -290,6 +314,11 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+
+  <!-- Particle JS scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+
 
 </body>
 
