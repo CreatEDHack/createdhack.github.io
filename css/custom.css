@@ -46,7 +46,7 @@
   #mainNav .navbar-toggler {
     color: #32adff;
     border: 2px solid #ccc;
-    border-radius: 0;
+    border-radius: 30px;
   }
 
   #mainNav .navbar-toggler:hover {
@@ -64,6 +64,10 @@
   #navbar-buttons li {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
+  }
+
+  .btn-primary {
+    margin-bottom: 50px!important;
   }
 
 }
@@ -88,7 +92,7 @@
 }
 
 #mainNav .nav-link:hover {
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: black;
 }
 
 #mainNav .navbar-brand {
@@ -99,6 +103,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: 0.5s ease-in-out;
 }
+
 #mainNav.navbar-shrink {
   background-color: rgba(0,0,0, 0.8);
   border-bottom: 1px solid rgba(240,176,54, 0.8);
@@ -137,23 +142,7 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Subheading';
-  src: url('../font/LemonMilklight.woff2') format('woff2'),
-  url('../font/LemonMilklight.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
-.masthead {
-  background: url("../img/edinburgh.jpg");
-  background-size: 100%;
-}
-
-.masthead h1, .masthead h2 {
-  display: inline-block;
-  max-width: 100%;
-}
 
 .inline {
   display: inline-block;
@@ -169,37 +158,30 @@
 
 .masthead h2, .sub-heading {
   text-align: center;
-  font-family: 'Subheading';
   -webkit-text-fill-color: rgba(240,176,54, 1);
   background-color: white;
   padding: 15px 35px;
   border: 2px solid #ccc;
+  border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.8);
-  white-space: -moz-pre-wrap; /* Firefox */
-  white-space: -o-pre-wrap; /* Opera */
-  white-space: nowrap; /* Chrome */
-  word-wrap: break-word; /* IE */
 }
 
 .masthead h1, .title-text {
-  width: auto;
-  font-size: 6.5rem;
-  line-height: 6.5rem;
-  letter-spacing: .8rem;
-  font-family: 'Title';
   opacity: 1;
   background: none;
-  color: white;
-  -webkit-text-fill-color: white;
+  color: #0D88D3;
+  -webkit-text-fill-color: #0D88D3;
 }
 
 .mb-5, .my-5 {
   margin-bottom: 2rem!important;
 }
 
-.red-text {
-  color: red;
-  -webkit-text-fill-color: red;
+@media (min-width: 992px) {
+  .masthead h2 {
+      max-width: 40rem;
+      font-size: 1.25rem;
+  }
 }
 
 /* ---- Button css ---- */
@@ -208,7 +190,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border: 2px solid #ccc;
-  border-radius: 0;
+  border-radius: 30px;
   color: #32adff;
   margin: 0 8px;
 }
@@ -231,27 +213,28 @@
   border-color: #32adff!important;
 }
 
-#button-box {
-  z-index: 100;
-  position: relative;
-}
-
 /* ---- Description text ---- */
 .text-white-50 {
   color: white!important;
 }
 
-/* ---- particles.js container ---- */
-#particles-js {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0
+.card {
+  border-radius: 50px;
 }
 
 #inputEmail {
-  border-radius: 0;
+  border-radius: 30px;
+}
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("");
+  background-color: #0f0d37;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
