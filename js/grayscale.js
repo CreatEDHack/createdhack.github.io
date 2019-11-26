@@ -1,5 +1,40 @@
+
+// Collapse Navbar
+let navbarCollapse = function() {
+  if ($("#mainNav").offset().top > 100 || mobile) {
+    if (!$("#mainNav").hasClass("navbar-shrink")) {
+      $("#mainNav").addClass("navbar-shrink");
+    }
+  } else {
+    if ($("#mainNav").hasClass("navbar-shrink")) {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  }
+};
+
+let mobile = false;
+
+let windowResize = function() {
+  if (window.innerWidth <= 991.98 && mobile == false) {
+    mobile = true;
+    $("#navbar-container").removeAttr("class");
+    $("#navbar-top-menu").attr("class", "container");
+
+  } else if (mobile && window.innerWidth > 991.98) {
+    mobile = false;
+    $("#navbar-container").attr("class", "container");
+    $("#navbar-top-menu").removeAttr("class");
+  }
+  navbarCollapse();
+};
+
 (function($) {
+  windowResize();
   "use strict"; // Start of use strict
+
+  $( window ).resize(function() {
+    windowResize();
+  });
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -26,18 +61,7 @@
     offset: 100
   });
 
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      if (!$("#mainNav").hasClass("navbar-shrink")) {
-        $("#mainNav").addClass("navbar-shrink");
-      }
-    } else {
-      if ($("#mainNav").hasClass("navbar-shrink")) {
-        $("#mainNav").removeClass("navbar-shrink");
-      }
-    }
-  };
+
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled

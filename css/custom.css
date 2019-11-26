@@ -1,4 +1,77 @@
 
+
+/* ---- Mobile only styling ---- */
+@media (max-width: 991.98px) {
+
+  nav {
+    width: 100%;
+  }
+
+  #navbar-container, #navbar-top-menu {
+    width: 100%;
+  }
+
+  .subscribe-for-updates {
+    font-size: 3.5vw!important;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    align-self: inherit;
+    position: initial;
+  }
+
+  .navbar-brand {
+    display: inline-flex;
+  }
+
+  #mainNav {
+    background-color: transparent;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .projects-section .project-text {
+    padding: 3% !important;
+  }
+
+  #mainNav .navbar-toggler {
+    color: #32adff;
+    border: 2px solid #ccc;
+    border-radius: 0;
+  }
+
+  #mainNav .navbar-toggler:hover {
+    border-color: #32adff;
+  }
+
+  #mainNav .navbar-toggler:active {
+    border-color: white;
+  }
+
+  #mainNav.navbar-shrink .nav-link {
+    text-align: center;
+  }
+
+  #navbar-buttons li {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+}
+
+.subscribe-for-updates {
+  font-size: 2vw;
+}
+
 /* ---- Prevent user from being able to double click ---- */
 .no-select {
   -webkit-user-select: none; /* webkit (safari, chrome) browsers */
@@ -7,11 +80,6 @@
   -ms-user-select: none; /* IE10+ */
 }
 
-@media (max-width: 991.98px) {
-  #mainNav {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-}
 
 #mainNav .nav-link {
   -webkit-text-fill-color: rgba(240,176,54, 1);
@@ -79,7 +147,7 @@
 
 .masthead {
   background: url("../img/edinburgh.jpg");
-  background-size: auto;
+  background-size: 100%;
 }
 
 .masthead h1, .masthead h2 {
@@ -96,10 +164,11 @@
 }
 
 .projects-section .project-text {
-  padding: 10%!important;
+  padding: 10%;
 }
 
 .masthead h2, .sub-heading {
+  text-align: center;
   font-family: 'Subheading';
   -webkit-text-fill-color: rgba(240,176,54, 1);
   background-color: white;
@@ -150,7 +219,13 @@
   border-color: inherit;
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn-primary:focus {
+  background-color: rgba(0, 0, 0, 1);
+  color: #32adff;
+  border-color: white!important;
+}
+
+.btn-primary:active {
   background-color: rgba(0, 0, 0, 1)!important;
   color: #32adff;
   border-color: #32adff!important;

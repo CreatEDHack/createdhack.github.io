@@ -1,0 +1,8 @@
+
+.idea/$PRODUCT_WORKSPACE_FILE$
+*.iml
+.idea/modules.xml
+.idea/vcs.xml
+css/custom.css
+.idea/workspace.xml
+.idea/misc.xml
