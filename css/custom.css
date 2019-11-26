@@ -1,5 +1,5 @@
 
-/* ---- Prevent user from being able to double click text ---- */
+/* ---- Prevent user from being able to double click ---- */
 .no-select {
   -webkit-user-select: none; /* webkit (safari, chrome) browsers */
   -moz-user-select: none; /* mozilla browsers */
@@ -7,34 +7,153 @@
   -ms-user-select: none; /* IE10+ */
 }
 
-.nav-link {
-  color: rgba(255,255,255,0.8);
+@media (max-width: 991.98px) {
+  #mainNav {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 }
 
-.navbar-brand {
-  color: rgba(255,255,255,0.8);
+#mainNav .nav-link {
+  -webkit-text-fill-color: rgba(240,176,54, 1);
+  padding: 1.5rem 1.5rem 1.25rem;
+  border: 0;
+}
+
+#mainNav .nav-link:hover {
+  -webkit-text-fill-color: white;
+}
+
+#mainNav .navbar-brand {
+  -webkit-text-fill-color: rgba(240,176,54, 1);
+}
+
+#mainNav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: 0.5s ease-in-out;
+}
+#mainNav.navbar-shrink {
+  background-color: rgba(0,0,0, 0.8);
+  border-bottom: 1px solid rgba(240,176,54, 0.8);
+  transition: 0.5s ease-in-out;
+}
+
+#mainNav.navbar-shrink .nav-link {
+  color: #161616;
+  padding: 1.5rem 1.5rem 1.25rem;
+  border: 0;
+}
+
+#mainNav.navbar-shrink .nav-link.active {
+  -webkit-text-fill-color: rgba(255, 255, 255, 1);
+  border: 0;
+}
+
+.title-icon {
+  width: 64px;
+  height: 64px;
+  background: url('../img/icon.png');
+  background-size: 64px 64px;
+}
+
+.hidden-anchor {
+  position: relative;
+  top: -15px;
 }
 
 /* ---- Custom title font ---- */
 @font-face {
-  font-family: 'College';
-  src: url('../font/college.woff2') format('woff2'),
-  url('../font/college.woff') format('woff');
+  font-family: 'Title';
+  src: url('../font/Quantum.woff2') format('woff2'),
+  url('../font/Quantum.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-.title-text {
-  font-family: 'College'!important;
-  color: white!important;
-  opacity: 1!important;
-  background: none!important;
-  -webkit-text-fill-color: white!important;;
+@font-face {
+  font-family: 'Subheading';
+  src: url('../font/LemonMilklight.woff2') format('woff2'),
+  url('../font/LemonMilklight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.masthead {
+  background: url("../img/edinburgh.jpg");
+  background-size: auto;
+}
+
+.masthead h1, .masthead h2 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.projects-section .project-text hr {
+  border-color: #32adff;
+}
+
+.projects-section .project-text {
+  padding: 10%!important;
+}
+
+.masthead h2, .sub-heading {
+  font-family: 'Subheading';
+  -webkit-text-fill-color: rgba(240,176,54, 1);
+  background-color: white;
+  padding: 15px 35px;
+  border: 2px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.8);
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: nowrap; /* Chrome */
+  word-wrap: break-word; /* IE */
+}
+
+.masthead h1, .title-text {
+  width: auto;
+  font-size: 6.5rem;
+  line-height: 6.5rem;
+  letter-spacing: .8rem;
+  font-family: 'Title';
+  opacity: 1;
+  background: none;
+  color: white;
+  -webkit-text-fill-color: white;
+}
+
+.mb-5, .my-5 {
+  margin-bottom: 2rem!important;
+}
+
+.red-text {
+  color: red;
+  -webkit-text-fill-color: red;
 }
 
 /* ---- Button css ---- */
 .btn-primary {
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 0;
+  color: #32adff;
+  margin: 0 8px;
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: #32adff;
+  border-color: inherit;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 1)!important;
+  color: #32adff;
+  border-color: #32adff!important;
 }
 
 #button-box {
@@ -58,6 +177,6 @@
   left: 0
 }
 
-.masthead {
-  background: #000;
+#inputEmail {
+  border-radius: 0;
 }
