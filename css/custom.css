@@ -95,7 +95,7 @@ body {
 }
 
 #mainNav .nav-link:hover {
-  -webkit-text-fill-color: black;
+  -webkit-text-fill-color: white;
 }
 
 #mainNav .navbar-brand {
