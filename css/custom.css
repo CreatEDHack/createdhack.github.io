@@ -1,4 +1,7 @@
-
+body {
+	margin: 0;
+	padding: 0;
+}
 
 /* ---- Mobile only styling ---- */
 @media (max-width: 991.98px) {
@@ -173,10 +176,20 @@
 
 .masthead h1, .title-text {
   font-family: "Title";
+  text-align: center;
   opacity: 1;
-  background: none;
-  color: #0D88D3;
-  -webkit-text-fill-color: #0D88D3;
+  background: url("../img/text-background.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}	
+	100% {
+		background-position: 100% 100%;
+	}
 }
 
 .mb-5, .my-5 {
