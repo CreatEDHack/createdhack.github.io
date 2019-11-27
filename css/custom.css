@@ -181,14 +181,23 @@ body {
   background: url("../img/text-background.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animate 10s linear infinite;
+  animation: animate 30s linear infinite;
 }
 @keyframes animate {
 	0% {
 		background-position: 0 0;
+	}			
+	25% {
+		background-position: 0 100%;
 	}	
-	100% {
+	50% {
 		background-position: 100% 100%;
+	}		
+	75% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0 0;
 	}
 }
 
