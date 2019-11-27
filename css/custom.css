@@ -178,26 +178,26 @@ body {
   font-family: "Title";
   text-align: center;
   opacity: 1;
-  background: url("../img/text-background.png");
+  background: url("../img/title-background.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animate 30s linear infinite;
+  animation: animate 60s linear infinite;
 }
 @keyframes animate {
 	0% {
-		background-position: 0 0;
-	}			
-	25% {
-		background-position: 0 100%;
-	}	
+		background-position: 50% 0;
+  }	
+  25% {
+		background-position: 100% 50%;
+  }
 	50% {
-		background-position: 100% 100%;
-	}		
+		background-position: 50% 100%;
+	}
 	75% {
-		background-position: 100% 0;
+		background-position: 0% 50%;
 	}
 	100% {
-		background-position: 0 0;
+		background-position: 50% 0%;
 	}
 }
 
