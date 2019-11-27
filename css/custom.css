@@ -136,8 +136,13 @@
 /* ---- Custom title font ---- */
 @font-face {
   font-family: 'Title';
-  src: url('../font/Quantum.woff2') format('woff2'),
-  url('../font/Quantum.woff') format('woff');
+  src: url("../fonts/NexaBold.eot"); /* IE9 Compat Modes */
+  src: url('../font/NexaBold.woff2') format('woff2'), /* Modern Browsers */
+  url('../font/NexaBold.woff') format('woff'), /* Modern Browsers */
+  url("../fonts/NexaBold.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/NexaBold.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/NexaBold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/NexaBold.otf") format("opentype"); /* Open Type Font */
   font-weight: normal;
   font-style: normal;
 }
@@ -167,6 +172,7 @@
 }
 
 .masthead h1, .title-text {
+  font-family: "Title";
   opacity: 1;
   background: none;
   color: #0D88D3;
