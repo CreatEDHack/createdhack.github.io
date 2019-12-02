@@ -178,27 +178,20 @@ body {
   font-family: "Title";
   text-align: center;
   opacity: 1;
-  background: url("../img/title-background.png");
+  background: url("../img/title-scrolling.png");
+  background-repeat: repeat-x;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animate 60s linear infinite;
+  animation: animate 150s linear infinite;
 }
 @keyframes animate {
-	0% {
-		background-position: 50% 0;
-  }	
-  25% {
-		background-position: 100% 50%;
+  from {
+    background-position: 0 0;
   }
-	50% {
-		background-position: 50% 100%;
-	}
-	75% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 50% 0%;
-	}
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: -10000px 0;
+  }
 }
 
 .mb-5, .my-5 {
