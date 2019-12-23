@@ -1,21 +1,25 @@
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.about-section {
+  background: #17153a;
 }
 
 /* ---- Mobile only styling ---- */
 @media (max-width: 991.98px) {
-
   nav {
     width: 100%;
   }
 
-  #navbar-container, #navbar-top-menu {
+  #navbar-container,
+  #navbar-top-menu {
     width: 100%;
   }
 
   .subscribe-for-updates {
-    font-size: 3.5vw!important;
+    font-size: 3.5vw !important;
   }
 
   .container {
@@ -70,9 +74,8 @@ body {
   }
 
   .btn-primary {
-    margin-bottom: 50px!important;
+    margin-bottom: 50px !important;
   }
-
 }
 
 .subscribe-for-updates {
@@ -87,9 +90,8 @@ body {
   -ms-user-select: none; /* IE10+ */
 }
 
-
 #mainNav .nav-link {
-  -webkit-text-fill-color: rgba(240,176,54, 1);
+  -webkit-text-fill-color: white;
   padding: 1.5rem 1.5rem 1.25rem;
   border: 0;
 }
@@ -99,7 +101,7 @@ body {
 }
 
 #mainNav .navbar-brand {
-  -webkit-text-fill-color: rgba(240,176,54, 1);
+  -webkit-text-fill-color: white;
 }
 
 #mainNav {
@@ -108,8 +110,8 @@ body {
 }
 
 #mainNav.navbar-shrink {
-  background-color: rgba(0,0,0, 0.8);
-  border-bottom: 1px solid rgba(240,176,54, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid white;
   transition: 0.5s ease-in-out;
 }
 
@@ -127,7 +129,7 @@ body {
 .title-icon {
   width: 64px;
   height: 64px;
-  background: url('../img/icon.png');
+  background: url("../img/icon.png");
   background-size: 64px 64px;
 }
 
@@ -138,19 +140,32 @@ body {
 
 /* ---- Custom title font ---- */
 @font-face {
-  font-family: 'Title';
+  font-family: "Title";
   src: url("../fonts/NexaBold.eot"); /* IE9 Compat Modes */
-  src: url('../font/NexaBold.woff2') format('woff2'), /* Modern Browsers */
-  url('../font/NexaBold.woff') format('woff'), /* Modern Browsers */
-  url("../fonts/NexaBold.svg") format("svg"), /* Legacy iOS */
-  url("../fonts/NexaBold.ttf") format("truetype"), /* Safari, Android, iOS */
-  url("../fonts/NexaBold.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/NexaBold.otf") format("opentype"); /* Open Type Font */
+  src: url("../font/NexaBold.woff2") format("woff2"),
+    /* Modern Browsers */ url("../font/NexaBold.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/NexaBold.svg") format("svg"),
+    /* Legacy iOS */ url("../fonts/NexaBold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/NexaBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/NexaBold.otf") format("opentype"); /* Open Type Font */
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ProximaRegular";
+  src: url("../font/ProximaNovaRegular.otf");
+  font-weight: normal;
+  font-size: normal;
+}
 
+@font-face {
+  font-family: "SubBtnText";
+  src: url("../font/ProximaNovaBold.otf");
+  font-weight: normal;
+  font-size: normal;
+}
 
 .inline {
   display: inline-block;
@@ -164,17 +179,16 @@ body {
   padding: 10%;
 }
 
-.masthead h2, .sub-heading {
+.masthead h2,
+.sub-heading {
   text-align: center;
-  -webkit-text-fill-color: rgba(240,176,54, 1);
-  background-color: white;
-  padding: 15px 35px;
-  border: 2px solid #ccc;
-  border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Title";
+  -webkit-text-fill-color: white;
+  font-size: 2rem;
 }
 
-.masthead h1, .title-text {
+.masthead h1,
+.title-text {
   font-family: "Title";
   text-align: center;
   opacity: 1;
@@ -188,32 +202,36 @@ body {
   from {
     background-position: 0 0;
   }
-/*use negative width if you want it to flow right to left else and positive for left to right*/
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
   to {
     background-position: -10000px 0;
   }
 }
 
-.mb-5, .my-5 {
-  margin-bottom: 2rem!important;
+.mb-5,
+.my-5 {
+  margin-bottom: 2rem !important;
 }
 
 @media (min-width: 992px) {
   .masthead h2 {
-      max-width: 40rem;
-      font-size: 1.25rem;
+    max-width: 40rem;
+    font-size: 2rem;
   }
 }
 
 /* ---- Button css ---- */
 .btn-primary {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 2px solid #ccc;
+  background-color: #7bc9ac;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 30px;
-  color: #32adff;
+  color: #ffffff;
   margin: 0 8px;
+  font-family: "SubBtnText";
+  font-size: 1.5rem;
+  text-transform: none;
+  letter-spacing: 0px;
 }
 
 .btn-primary:hover {
@@ -225,18 +243,18 @@ body {
 .btn-primary:focus {
   background-color: rgba(0, 0, 0, 1);
   color: #32adff;
-  border-color: white!important;
+  border-color: white !important;
 }
 
 .btn-primary:active {
-  background-color: rgba(0, 0, 0, 1)!important;
+  background-color: rgba(0, 0, 0, 1) !important;
   color: #32adff;
-  border-color: #32adff!important;
+  border-color: #32adff !important;
 }
 
 /* ---- Description text ---- */
 .text-white-50 {
-  color: white!important;
+  color: white !important;
 }
 
 .card {
@@ -253,9 +271,41 @@ body {
   min-height: 35rem;
   padding: 15rem 0;
   background: url("");
-  background-color: #0f0d37;
+  background-color: #17153a;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+/* nav bar */
+.nav-item {
+  font-family: "ProximaRegular";
+}
+
+/* Sponsors */
+
+.prev-sponsors-container {
+  padding: 1rem 30px 1.5rem;
+  background: white;
+}
+
+.prev-sponsors-img {
+  max-width: 100%;
+  max-height: 3rem;
+  margin: 2rem;
+  margin-bottom: 1rem;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 480px) {
+  .prev-sponsors-img-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .prev-sponsors-img-container {
+    width: 33%;
+  }
 }
