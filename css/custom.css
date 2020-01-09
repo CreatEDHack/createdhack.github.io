@@ -7,6 +7,22 @@ body {
   background: #17153a;
 }
 
+.workshop-item {
+	width: 100%;
+	height: 100%;
+}
+
+.workshop-item-image {
+	border: 0;
+}
+
+.workshop-item-textbox {
+	padding: 3%!important;
+	background-color: #161616!important;
+	border: 10px solid white;
+
+}
+
 /* ---- Mobile only styling ---- */
 @media (max-width: 991.98px) {
   nav {
@@ -48,6 +64,9 @@ body {
 
   .projects-section .project-text {
     padding: 3% !important;
+  }
+  .project-text {
+	  padding: 3% !important;
   }
 
   #mainNav .navbar-toggler {
@@ -222,7 +241,7 @@ body {
 
 /* ---- Button css ---- */
 .btn-primary {
-  background-color: #7bc9ac;
+  background-color: #F18952;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 30px;
@@ -235,21 +254,18 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: rgba(0, 0, 0, 1);
-  color: #32adff;
-  border-color: inherit;
+	background-color: #F1735E;
+	color: #ccc;
 }
 
 .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 1);
-  color: #32adff;
-  border-color: white !important;
+	background-color: #F06B70;
+	color: #ccc;
 }
 
 .btn-primary:active {
-  background-color: rgba(0, 0, 0, 1) !important;
-  color: #32adff;
-  border-color: #32adff !important;
+	background-color: #F06B70!important;
+	color: #000!important;
 }
 
 /* ---- Description text ---- */
