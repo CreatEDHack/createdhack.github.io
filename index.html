@@ -66,7 +66,7 @@
 
   <!-- Header -->
   <a id="apply" class="hidden-anchor"></a>
-  <header class="masthead">
+  <div class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center no-select">
           <h1 class="mx-auto my-0 title-text">CreatED Hack '20</h1>
@@ -75,54 +75,62 @@
           <h2 class="text-white-50 mx-auto mt-2 mb-3 sub-heading" style="width: 100%;">Appleton Tower Concourse, The University of Edinburgh</h2>
 
           <div id="button-box">
-            <a href="mailto:gagan@ears-edi.com?subject=Interest in sponsorship" class="btn btn-primary js-scroll-trigger">Become a sponsor</a>
+            <a alt="This button opens an email application." title="Opens email application. Please be patient while it loads." href="mailto:gagan@ears-edi.com?subject=Interest in sponsorship" class="btn btn-primary js-scroll-trigger" style="z-index: 1; position: relative;">Become a sponsor</a>
           </div>
         </div>
       </div>
-  </header>
-
+  </div>
+	
   <!-- About Section -->
   <a id="about" class="hidden-anchor"></a>
+  <section class="text-center">
+	<header>
+	  <div class="diagonal dark-blue-bg"></div>
+	  <h1 class="sub-heading diagonal-text" style="padding: 6em 0 2em 0;">About</h1>
+	</header>
+	<section>
+		<div class="mx-auto" style="padding: 5em 0 3.5em 0;">
+			<div class="container">
+				<p style="font-weight: bold">CreatED is a 24 hour hardware hackathon coming to Edinburgh this March.
+				It’ll bring together students for a fun weekend of invention, hacking, and learning.
+				Brought to you by The University of Edinburgh Embedded and Robotics Society.</p>
+			</div>
+		</div>
+		<div class="diagonal"></div>
+	</section>
+	<header style="height: 300px; background: white;">
+	  <div class="diagonal-top" style="z-index: 2; background: #161616"></div>
+	  <!-- Footer -->
 
-  <section class="about-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4 sub-heading">About</h2>
-          <p class="text-white-50">CreatED is a 24 hour hardware hackathon coming to Edinburgh this March.
-            It’ll bring together students for a fun weekend of invention, hacking, and learning.
-            Brought to you by The University of Edinburgh Embedded and Robotics Society. </p>
-        </div>
-      </div>
-    </div>
-  <!-- </section> -->
+		<div style="padding-top: 7em; z-index: 2; position: relative">
+		<div class="bg-black small text-center text-white">
 
+			<div class="social d-flex justify-content-center">
+			</div>
+			<div class="text-white mb-4">
+			  Copyright &copy; CreatED 2020
+			</div>
+			<a href="https://www.facebook.com/createdhack/" class="mx-2">
+			  <i class="fab fa-facebook-f"></i>
+			</a>
+
+			<a href="https://github.com/createdhack" class="mx-2">
+			  <i class="fab fa-github"></i>
+			</a>
+
+			<a href="https://twitter.com/createdhack" class="mx-2">
+			  <i class="fab fa-twitter"></i>
+			</a>
+
+			<a href="https://www.linkedin.com/company/created-hardware-hackathon" class="mx-2">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			
+		</div>
+		</div>
+		
+	</header>
   </section>
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white">
-
-    <div class="social d-flex justify-content-center">
-    </div>
-    <div class="text-white mb-4">
-      Copyright &copy; CreatED 2020
-    </div>
-    <a href="https://www.facebook.com/createdhack/" class="mx-2">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-
-    <a href="https://github.com/createdhack" class="mx-2">
-      <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://twitter.com/createdhack" class="mx-2">
-      <i class="fab fa-twitter"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/company/created-hardware-hackathon" class="mx-2">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    
-  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
