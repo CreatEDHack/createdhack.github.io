@@ -8,6 +8,10 @@ body {
   background: #17153a;
 }
 
+.faq-bubble {
+	padding-bottom: 2em;
+}
+
 .workshop-item {
 	width: 100%;
 	height: 100%;
