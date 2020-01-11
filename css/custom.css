@@ -3,13 +3,20 @@ body {
   padding: 0;
 }
 
-.about-section {
+.about-section,
+.dark-blue-bg {
   background: #17153a;
 }
 
 .workshop-item {
 	width: 100%;
 	height: 100%;
+	border-radius: 6em;
+	overflow: hidden;
+}
+
+.border-box {
+	margin-bottom: 2em;
 }
 
 .workshop-item-image {
@@ -19,8 +26,7 @@ body {
 .workshop-item-textbox {
 	padding: 3%!important;
 	background-color: #161616!important;
-	border: 10px solid white;
-
+	border: 0;
 }
 
 /* ---- Mobile only styling ---- */
@@ -199,10 +205,11 @@ body {
 }
 
 .masthead h2,
+
 .sub-heading {
   text-align: center;
   font-family: "Title";
-  -webkit-text-fill-color: white;
+  color: white;
   font-size: 2rem;
 }
 
@@ -285,7 +292,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding-top: 15rem;
   background: url("");
   background-color: #17153a;
   background-position: center;
@@ -301,9 +308,51 @@ body {
 
 /* Sponsors */
 
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+.diagonal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-2deg);
+  transform-origin: top left;
+}
+
+.diagonal-top {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-2deg);
+  transform-origin: bottom right;
+}
+
+.diagonal-text {
+  position: relative;
+  text-align: center;
+}
+
 .prev-sponsors-container {
   padding: 1rem 30px 1.5rem;
-  background: transparent;
+  background: white;
+}
+
+.sponsor-tier {
+	color: #
+}
+
+.prev-sponsor-img-container {
+	padding-bottom: 8em;
 }
 
 .prev-sponsors-img {
@@ -324,4 +373,8 @@ body {
   .prev-sponsors-img-container {
     width: 33%;
   }
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 0 !important;
 }
