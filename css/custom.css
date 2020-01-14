@@ -3,13 +3,35 @@ body {
   padding: 0;
 }
 
-.about-section,
 .dark-blue-bg {
   background: #17153a;
 }
 
 .faq-bubble {
 	padding-bottom: 2em;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.img-box {
+	display: inline-block;
+	width: 75%;
+}
+
+.top-borders {
+	border-top-right-radius: 6em;
+	border-top-left-radius: 6em;
+}
+
+.bottom-borders {
+	border-bottom-right-radius: 6em;
+	border-bottom-left-radius: 6em;
 }
 
 .workshop-item {
