@@ -19,6 +19,10 @@ body {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.descriptor {
+	margin-bottom: 1em;
+}
+
 .img-box {
 	display: inline-block;
 	width: 75%;
@@ -239,6 +243,14 @@ body {
   font-size: 2rem;
 }
 
+.nexa {
+  font-family: "Title";
+}
+
+.orange {
+	color: rgba(240,176,54)!important;
+}
+
 .masthead h1,
 .title-text {
   font-family: "Title";
@@ -274,11 +286,11 @@ body {
 
 /* ---- Button css ---- */
 .btn-primary {
-  background-color: #F18952;
+  background-color: rgba(240,176,54);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 30px;
-  color: #ffffff;
+  color: black;
   margin: 0 8px;
   font-family: "SubBtnText";
   font-size: 1.5rem;
@@ -287,18 +299,18 @@ body {
 }
 
 .btn-primary:hover {
-	background-color: #F1735E;
-	color: #ccc;
+	background-color: rgba(240,176,54, 0.5);
+	color: black;
 }
 
 .btn-primary:focus {
-	background-color: #F06B70;
-	color: #ccc;
+	background-color: rgba(240,176,54, 0.3)!important;
+	color: #888;
 }
 
 .btn-primary:active {
-	background-color: #F06B70!important;
-	color: #000!important;
+	background-color: rgba(240,176,54, 0.5)!important;
+	color: #888!important;
 }
 
 /* ---- Description text ---- */
