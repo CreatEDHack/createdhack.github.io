@@ -29,13 +29,13 @@ body {
 }
 
 .top-borders {
-	border-top-right-radius: 6em;
-	border-top-left-radius: 6em;
+	border-top-right-radius: 3em;
+	border-top-left-radius: 3em;
 }
 
 .bottom-borders {
-	border-bottom-right-radius: 6em;
-	border-bottom-left-radius: 6em;
+	border-bottom-right-radius: 3em;
+	border-bottom-left-radius: 3em;
 }
 
 .workshop-item {
@@ -67,14 +67,18 @@ body {
   margin-bottom: 16px;
   padding: 0 8px;
 }
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+.front-image-box {
+	z-index: 2;
+	position: relative;
+	margin: 10em 0 -2em 0;
 }
 
+@media (max-width: 1200px) {
+	.front-image-box {
+		margin-bottom: 7em;
+	}
+}
+  
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
