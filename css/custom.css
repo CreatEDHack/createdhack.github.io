@@ -8,58 +8,58 @@ body {
 }
 
 .faq-bubble {
-	padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 .zoom {
-  transition: transform .2s; /* Animation */
+  transition: transform 0.2s; /* Animation */
 }
 
 .zoom:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .descriptor {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .img-box {
-	display: inline-block;
-	width: 75%;
+  display: inline-block;
+  width: 75%;
 }
 
 .top-borders {
-	border-top-right-radius: 3em;
-	border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+  border-top-left-radius: 3em;
 }
 
 .bottom-borders {
-	border-bottom-right-radius: 3em;
-	border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+  border-bottom-left-radius: 3em;
 }
 
 .workshop-item {
-	width: 100%;
-	height: 100%;
-	border-radius: 6em;
-	overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 6em;
+  overflow: hidden;
 }
 
 .border-box {
-	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .workshop-item-image {
-	border: 0;
+  border: 0;
 }
 
 .workshop-item-textbox {
-	padding: 3%!important;
-	background-color: #161616!important;
-	border: 0;
+  padding: 3% !important;
+  background-color: #161616 !important;
+  border: 0;
 }
-
-
 
 .column {
   float: left;
@@ -68,9 +68,9 @@ body {
   padding: 0 8px;
 }
 .front-image-box {
-	z-index: 2;
-	position: relative;
-	margin: 10em 0 -2em 0;
+  z-index: 2;
+  position: relative;
+  margin: 10em 0 -2em 0;
 }
 @media (min-width: 991.98px) {
 	#team {
@@ -81,9 +81,8 @@ body {
 	.front-image-box {
 		margin-bottom: 7em;
 	}
-
 }
-  
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -92,7 +91,8 @@ body {
   padding: 0 16px;
 }
 
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -103,44 +103,44 @@ body {
 }
 
 .col-xl-4 {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .team-card {
-	height: 100%;
+  height: 100%;
 }
 
 .team-image {
-	border-top-right-radius: 3em;
-	border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+  border-top-left-radius: 3em;
 }
 
 .team-textbox {
-	height: auto;
-	background: black;
-	border-bottom-right-radius: 3em;
-	border-bottom-left-radius: 3em;
+  height: auto;
+  background: black;
+  border-bottom-right-radius: 3em;
+  border-bottom-left-radius: 3em;
 }
 
 .team-name {
-	padding: 0.5em;
-	margin: 0;
+  padding: 0.5em;
+  margin: 0;
 }
 
 .team-study {
 }
 
 .team-social {
-	padding-bottom: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .social-button {
-	margin: 0.5em;
+  margin: 0.5em;
 }
 
 .accessible {
-	position: relative; 
-	z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 #mlh-trust-badge {
@@ -201,7 +201,7 @@ body {
     padding: 3% !important;
   }
   .project-text {
-	  padding: 3% !important;
+    padding: 3% !important;
   }
 
   #mainNav .navbar-toggler {
@@ -334,7 +334,6 @@ body {
 }
 
 .masthead h2,
-
 .sub-heading {
   text-align: center;
   font-family: "Title";
@@ -347,15 +346,15 @@ body {
 }
 
 .orange {
-	color: rgba(240,176,54)!important;
+  color: rgba(240, 176, 54) !important;
 }
 
 .blue {
-	color: #64a19d!important;
+  color: #64a19d !important;
 }
 
 .white {
-	color: #fff!important;
+  color: #fff !important;
 }
 
 .masthead h1,
@@ -393,7 +392,7 @@ body {
 
 /* ---- Button css ---- */
 .btn-primary {
-  background-color: rgba(240,176,54);
+  background-color: rgba(240, 176, 54);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 30px;
@@ -406,18 +405,18 @@ body {
 }
 
 .btn-primary:hover {
-	background-color: rgba(240,176,54, 0.5);
-	color: black;
+  background-color: rgba(240, 176, 54, 0.5);
+  color: black;
 }
 
 .btn-primary:focus {
-	background-color: rgba(240,176,54, 0.3)!important;
-	color: #888;
+  background-color: rgba(240, 176, 54, 0.3) !important;
+  color: #888;
 }
 
 .btn-primary:active {
-	background-color: rgba(240,176,54, 0.5)!important;
-	color: #888!important;
+  background-color: rgba(240, 176, 54, 0.5) !important;
+  color: #888 !important;
 }
 
 /* ---- Description text ---- */
@@ -493,16 +492,16 @@ header {
 }
 
 .sponsor-tier {
-	color: #
+  color: #;
 }
 
 .prev-sponsor-img-container {
-	padding-bottom: 8em;
+  padding-bottom: 8em;
 }
 
 .prev-sponsors-img {
-  max-width: 100%;
-  max-height: 3rem;
+  width: 20%;
+  height: 30%;
   margin: 2rem;
   margin-bottom: 1rem;
   vertical-align: middle;
@@ -512,14 +511,21 @@ header {
   .prev-sponsors-img-container {
     width: 100%;
   }
+  .prev-sponsors-img {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 800px) and (min-width: 600px) {
   .prev-sponsors-img-container {
     width: 33%;
   }
+  .prev-sponsors-img {
+    width: 30%;
+  }
 }
 
-.mb-5, .my-5 {
-    margin-bottom: 0 !important;
+.mb-5,
+.my-5 {
+  margin-bottom: 0 !important;
 }
