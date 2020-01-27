@@ -1,10 +1,80 @@
 body {
   margin: 0;
   padding: 0;
+  background: #17153a;
+}
+
+#particles-js { 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+	background-color: #17153a; 
+	background-image: url(""); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.sub-heading-title {
+	padding: 6em 0 2em 0;
+}
+
+.vertical-padding {
+	padding: 6em 0 6em 0;
+}
+
+.diagonal-section {
+	z-index: 30; 
+	position: relative;
+	opacity: 0.9;
+	transform: skewY(-2deg); 
+	-ms-transform: skewY(-2deg); 
+	-webkit-transform: skewY(-2deg);
+}
+
+.footer-section {
+	margin-top: -2em;
+	padding: 2em 0 2em 0;
+	opacity: 1;
+}
+
+.foreground {
+	z-index: 3;
+	position: relative;
+}
+
+.white-bg {
+	background: white; 
+}
+
+.transparent-bg {
+	background: transparent; 
+}
+
+.black-bg {
+	background: black;
+}
+
+.diagonal-section-content {
+	padding: 5em 0 5em 0; 
+	transform: skewY(2deg); 
+	-ms-transform: skewY(2deg); 
+	-webkit-transform: skewY(2deg);
+}
+
+header, section {
+	z-index: 3;
+	position: relative;
+	overflow: hidden;	
 }
 
 .dark-blue-bg {
-  background: #17153a;
+  background: transparent;
 }
 
 .faq-bubble {
@@ -67,11 +137,12 @@ body {
   margin-bottom: 16px;
   padding: 0 8px;
 }
-.front-image-box {
-  z-index: 2;
-  position: relative;
-  margin: 10em 0 -2em 0;
+
+.image-showcase {
+	z-index: 3;
+	position: relative;
 }
+
 @media (min-width: 991.98px) {
 	#team {
 		margin-right: 7em;
@@ -80,6 +151,9 @@ body {
 @media (max-width: 1200px) {
 	.front-image-box {
 		margin-bottom: 7em;
+	}
+	.first-image {
+		margin-bottom: 8em;
 	}
 }
 
@@ -200,22 +274,25 @@ body {
   .projects-section .project-text {
     padding: 3% !important;
   }
+  
   .project-text {
     padding: 3% !important;
   }
 
   #mainNav .navbar-toggler {
-    color: #32adff;
+    color: #F0B036;
     border: 2px solid #ccc;
     border-radius: 30px;
   }
-
-  #mainNav .navbar-toggler:hover {
-    border-color: #32adff;
+  
+  #mainNav .navbar-toggler:hover, #mainNav .navbar-toggler:focus {
+    color: #F0B036;
+    border-color: #F0B036;
   }
 
   #mainNav .navbar-toggler:active {
-    border-color: white;
+    color: #A07524;
+    border-color: #A07524;
   }
 
   #mainNav.navbar-shrink .nav-link {
@@ -340,21 +417,34 @@ body {
   color: white;
   font-size: 2rem;
 }
-
-.nexa {
-  font-family: "Title";
+p {
+	margin: 0;
 }
 
-.orange {
-  color: rgba(240, 176, 54) !important;
+.nexa {
+	font-family: "Title";
+}
+
+.black {
+	color: #000 !important;
+}
+
+
+.orange, .orange-hover {
+	color: #F0B036 !important;
+}
+
+.orange-hover:focus, .orange-hover:hover {
+    text-decoration: none;
+	color: #A07524 !important;
 }
 
 .blue {
-  color: #64a19d !important;
+	color: #64a19d !important;
 }
 
 .white {
-  color: #fff !important;
+	color: #fff !important;
 }
 
 .masthead h1,
@@ -432,13 +522,13 @@ body {
   border-radius: 30px;
 }
 .masthead {
+  z-index: 3;
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding-top: 10rem;
   background: url("");
-  background-color: #17153a;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -451,11 +541,6 @@ body {
 }
 
 /* Sponsors */
-
-header {
-  position: relative;
-  overflow: hidden;
-}
 
 .diagonal {
   position: absolute;
@@ -486,7 +571,7 @@ header {
   text-align: center;
 }
 
-.prev-sponsors-container {
+.sponsors-container {
   padding: 1rem 30px 1.5rem;
   background: white;
 }
@@ -495,11 +580,11 @@ header {
   color: #;
 }
 
-.prev-sponsor-img-container {
+.sponsor-img-container {
   padding-bottom: 8em;
 }
 
-.prev-sponsors-img {
+.sponsors-img {
   width: 20%;
   height: 30%;
   margin: 2rem;
@@ -508,19 +593,19 @@ header {
 }
 
 @media screen and (max-width: 480px) {
-  .prev-sponsors-img-container {
+  .sponsors-img-container {
     width: 100%;
   }
-  .prev-sponsors-img {
+  .sponsors-img {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 800px) and (min-width: 600px) {
-  .prev-sponsors-img-container {
+  .sponsors-img-container {
     width: 33%;
   }
-  .prev-sponsors-img {
+  .sponsors-img {
     width: 30%;
   }
 }
@@ -528,4 +613,16 @@ header {
 .mb-5,
 .my-5 {
   margin-bottom: 0 !important;
+}
+
+#mainNav .nav-link:hover {
+    -webkit-text-fill-color: rgba(240, 176, 54) !important;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+    color: rgba(240, 176, 54) !important;
+}
+
+#mainNav.navbar-shrink .nav-link:hover {
+    color: rgba(240, 176, 54) !important;
 }
