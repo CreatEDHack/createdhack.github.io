@@ -19,7 +19,7 @@ particlesJS(
         "value":6,
         "density":{ 
           "enable":true,
-          "value_area":800
+          "value_area":1200
         }
       },
       "color":{ 
@@ -83,11 +83,11 @@ particlesJS(
       }
     },
     "interactivity":{ 
-      "detect_on":"canvas",
+      "detect_on":"window",
       "events":{ 
         "onhover":{ 
-          "enable":false,
-          "mode":"grab"
+          "enable":true,
+          "mode":"push"
         },
         "onclick":{ 
           "enable":false,
