@@ -72,11 +72,16 @@ body {
 	position: relative;
 	margin: 10em 0 -2em 0;
 }
-
+@media (min-width: 991.98px) {
+	#team {
+		margin-right: 7em;
+	}
+}
 @media (max-width: 1200px) {
 	.front-image-box {
 		margin-bottom: 7em;
 	}
+
 }
   
 .card {
@@ -138,8 +143,23 @@ body {
 	z-index: 2;
 }
 
+#mlh-trust-badge {
+	display:block;
+	max-width:120px!important;
+	min-width:50px!important;
+	position:fixed;
+	/* ---- This number is very important so menu doesn't overlap ---- */
+	right:10px!important;
+	top:0;
+	width:10%;
+	z-index:10000
+}
+
 /* ---- Mobile only styling ---- */
 @media (max-width: 991.98px) {
+	.navbar-toggler {
+		margin-right: 4em!important;
+	}
   nav {
     width: 100%;
   }
