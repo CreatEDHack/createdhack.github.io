@@ -540,6 +540,48 @@ p {
   font-family: "ProximaRegular";
 }
 
+/* Schedule*/
+#schedSat {
+  display: inline-block;
+}
+#schedSun {
+  display: inline-block;
+}
+.schedule .table {
+  border-left: #1f1f1f 0.8rem solid;
+  overflow-wrap: normal;
+  margin-top: 10px;
+}
+
+.schedule{
+  margin-top: 20px;
+}
+
+.table th {
+  text-align: center;
+  overflow-wrap: normal;
+  
+}
+
+.table td {
+  
+}
+
+.table tbody tr td {
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 1.0rem;
+  width: 180px;
+}
+
+.schedule header div {
+    font-family: "Title";
+    font-size: 6rem;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
 /* Sponsors */
 
 .diagonal {
