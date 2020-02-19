@@ -560,7 +560,7 @@ p {
 .table th {
   text-align: center;
   overflow-wrap: normal;
-  
+  font-size: 1.2vw;
 }
 
 .table td {
@@ -570,7 +570,8 @@ p {
 .table tbody tr td {
   vertical-align: middle;
   font-weight: 900;
-  font-size: 1.0rem;
+  font-size: 1.5vw;
+  max-height: 20px;
   width: 180px;
 }
 
