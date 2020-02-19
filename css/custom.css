@@ -217,6 +217,41 @@ header, section {
   z-index: 2;
 }
 
+.custom-tooltip {
+  position: relative;
+  display: inline;
+}
+
+.custom-tooltip .custom-tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 280%;
+  left: 15%;
+  margin-left: -60px;
+}
+
+.custom-tooltip .custom-tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.custom-tooltip:hover .custom-tooltiptext {
+  visibility: visible;
+}
+
 #mlh-trust-badge {
 	display:block;
 	max-width:120px!important;
