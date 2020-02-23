@@ -26,17 +26,20 @@ saturday.push(new scheduleEvent("Hacking Begins", "12:00", "main"));
 saturday.push(new scheduleEvent("Opening Ceremony", "11:00", "main"));
 saturday.push(new scheduleEvent("Introduction to Electronics", "12:15", "13:15", "ws"));
 saturday.push(new scheduleEvent("LUNCH", "13:00", "main"));
-saturday.push(new scheduleEvent("SUPPER", "19:00", "main"));
+saturday.push(new scheduleEvent("Coding Challenge by BlackRock", "13:30", "14:30", "ws"));
+saturday.push(new scheduleEvent("Entreprenuership workshop by Edinburgh Innovations", "15:00", "16:00", "ws"));
+saturday.push(new scheduleEvent("Workshop by Nexmo", "17:00", "18:00", "ws"));
+saturday.push(new scheduleEvent("Dinner", "19:00", "main"));
+saturday.push(new scheduleEvent("Werewolf by MLH (Social)", "20:00", "21:00", "ws"));
 saturday.push(new scheduleEvent("Sleep Drop-In Begins", "21:00", "main"));
-
-sunday.push(new scheduleEvent("PIZZA!!!", "00:00", "main"));
+sunday.push(new scheduleEvent("Pizza!!", "00:00", "main"));
 sunday.push(new scheduleEvent("Hacking Ends", "12:00", "main"));
-sunday.push(new scheduleEvent("BREAKFAST", "08:00", "main"));
-sunday.push(new scheduleEvent("LUNCH", "12:00", "main"));
+sunday.push(new scheduleEvent("Breakfast", "08:00", "main"));
+sunday.push(new scheduleEvent("Lunch", "12:00", "main"));
 sunday.push(new scheduleEvent("Judging Commences", "13:15", "14:30", "main"));
 sunday.push(new scheduleEvent("Closing Ceremony", "15:00", "16:00", "main"));
 sunday.push(new scheduleEvent("Venue closed", "17:00", "main"));
-sunday.push(new scheduleEvent("No workshops today", "00:00", "17:00", "ws"));
+// sunday.push(new scheduleEvent("No workshops today", "00:00", "17:00", "ws"));
 
 saturday.sort((a,b) => (a.startTime >= b.startTime) ? 1: -1);
 sunday.sort((a,b) => (a.startTime >= b.startTime) ? 1 : -1 );
